@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+	$(function() 
+	{
+		$("#box01").css("background-color", "red");
+		$("#box01").width(250);
+		$("#btn01").on("click", function() {
+			var boxmode = $("#list01").height();
+			if (boxmode != 200) {
+				$("#list01").height(200);
+				$("#list01").css("background-color", "green");
+			} else {
+				$("#list01").height(100);
+				$("#list01").css("background-color", "gray");			
+			}
+		});
+		$("#btn02").on("click", function() {
+			$("#list01").append("<li>추가된 항목!!</li>");
+		});
+	});
+</script>
+</head>
+<body>
+<noscript> <p> This browser does not support Javascript.</p> </noscript>
+
+<div id="box01">
+dxsdf
+<ul id="list01">
+<li>첫번째 항목</li>
+<li>두번째 항목</li>
+<li>세번째 항목</li>
+</ul>
+</div>
+<button id="btn01">Button 01</button>
+<button id="btn02">Button 02</button>
+</body>
+</html>
