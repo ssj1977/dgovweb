@@ -19,6 +19,16 @@ body {
     margin-left: 0px;
 }
 
+#toptitle{
+	top: 5px;
+	text-align: center;
+	font-family: "Verdana";
+	font-size: xx-large;
+	font-weight: bold;	
+	color: white;
+	text-shadow: 2px 2px #55BBEE;
+}
+
 #language_select{
 	margin-top: 0px;
     margin-right: 0px;
@@ -46,3 +56,27 @@ body {
 	font-weight: bold;
 }
 
+.block_transparent{
+	color: white;
+	width: 10%;
+}
+
+.countrylist {
+	list-style:none;	
+}
+
+#east_asia {
+	top: 40%;
+	left: 85%;
+	color: white;
+	width: 10%;
+	position: fixed;	
+}
+.countrylistitem {
+	margin-bottom: 5px;
+}
+
+.flagimage {
+	width: 48px;
+	vertical-align: middle;
+}
